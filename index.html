@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Visualizzazione Farfalle</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fdfdfd;
+      font-family: sans-serif;
+    }
+
+    #container {
+      border: 2px dashed #888;
+      background: white;
+      padding: 10px;
+    }
+
+    svg {
+      display: block;
+      background-color: #fff;
+    }
+
+    .butterfly {
+      fill: #9b59b6;
+      stroke: #5e3370;
+      stroke-width: 0.5;
+      opacity: 0.8;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+    .butterfly:hover {
+      opacity: 1;
+    }
+    
+    .antenna {
+      stroke: #333;
+      stroke-width: 1.2;
+      fill: none;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <svg width="600" height="400"></svg>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
